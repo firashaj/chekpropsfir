@@ -1,22 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from "./Component/Profile";
+import firas from './DSC_1073.JPG'
 
 function App() {
+  const handleName = (name) => {
+    alert('name: ' + name);
+
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Profile fullName='FirasHaj' bio='bio' profession='Ui/Ux Designer' image={firas} handleName={handleName} />
       </header>
     </div>
   );
